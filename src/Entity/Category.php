@@ -27,7 +27,9 @@ class Category
 
     /**
      * @ORM\ManyToOne(targetEntity=Category::class, inversedBy="subcategories")
+     * @ORM\JoinColumn(name="parent_id", referencedColumnName="id", onDelete="CASCADE")
      */
+
     private $parent;
 
     /**

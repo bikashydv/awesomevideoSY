@@ -1,0 +1,11 @@
+<option selected value="0">No parent</option>
+{# <option value="1">--For kids</option>
+<option value="1">-- For adults</option>
+<option value="1">--- For 60+</option>
+<option value="2">Scary</option>
+<option value="3">Motivating</option> #}
+
+{% for category in categories.categorylist %}
+<option value="{{category.id}}">{{category.name}}</option> 
+
+{% endfor %}
